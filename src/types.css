@@ -1,0 +1,520 @@
+/*
+  ====================================================
+                      WARNING
+  ====================================================
+  
+  This file exist just for css variable autocompletion.
+  No need to bundle or import this file in your project.
+
+  Install CSS Variable Autocomplete extension to take advantage of
+  CSS variable and classes autocompletion.
+  [https://marketplace.visualstudio.com/items?itemName=vunguyentuan.vscode-css-variables]
+*/
+
+:root {
+  /* STATIC COLORS */
+
+  /* Accent */
+  --blue: var(--figma-color-bg);
+  --purple: var(--figma-color-bg-component);
+  --pink: #ff00ff;
+  --green: #1bc47d;
+  --red: var(--figma-color-bg-danger);
+  --yellow: var(--figma-color-bg-warning);
+
+  /* Basic Foreground */
+  --black: #000;
+  --black1: rgba(0, 0, 0, 0.1);
+  --black3: rgba(0, 0, 0, 0.3);
+  --black8: rgba(0, 0, 0, 0.8);
+
+  /* Static */
+  --figma-color-bg-menu: #1e1e1e;
+  --figma-color-text-menu-text: #fff;
+  --figma-color-text-menu-secondary: rgba(255, 255, 255, 0.7);
+  --figma-color-border-menu: #383838;
+  --figma-color-text-highlight: rgba(13, 153, 255, 0.4);
+
+  /* TYPOGRAPHY */
+  /* Pos = positive applications (black on white) */
+  /* Neg = negative applications (white on black) */
+
+  /* Font stact */
+  --font-stack: "Inter", sans-serif;
+
+  /* Font sizes */
+  --font-size-xsmall: 11px;
+  --font-size-small: 12px;
+  --font-size-large: 13px;
+  --font-size-xlarge: 14px;
+
+  /* Font weights */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 600;
+
+  /* Lineheight */
+  --font-lineHeight: 16px;
+  --font-lineHeight-large: 24px;
+
+  /* Letterspacing */
+  --font-letter-spacing-pos-xsmall: 0.005em;
+  --font-letter-spacing-neg-xsmall: 0.01em;
+  --font-letter-spacing-pos-small: 0;
+  --font-letter-spacing-neg-small: 0.005em;
+  --font-letter-spacing-pos-large: -0.0025em;
+  --font-letter-spacing-neg-large: 0.0025em;
+  --font-letter-spacing-pos-xlarge: -0.001em;
+  --font-letter-spacing-neg-xlarge: -0.001em;
+
+  /* SPACING */
+  --figma-size-xxxsmall: 4px;
+  --figma-size-xxsmall: 8px;
+  --figma-size-xsmall: 16px;
+  --figma-size-small: 24px;
+  --figma-size-medium: 32px;
+  --figma-size-large: 40px;
+  --figma-size-xlarge: 48px;
+  --figma-size-xxlarge: 64px;
+  --figma-size-huge: 80px;
+
+  /* BORDER RADIUS */
+  --border-radius-small: 2px;
+  --border-radius-med: 5px;
+  --border-radius-large: 6px;
+}
+
+html {
+  font-family: var(--font-stack);
+  font-size: var(--font-size-xsmall);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--font-lineHeight);
+  letter-spacing: var(--font-letter-spacing-pos-xsmall);
+}
+
+/* UTILITIES */
+
+/* Type */
+.figma-font-ui11 {
+  font-family: var(--font-stack);
+  font-size: var(--font-size-xsmall);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--font-lineHeight);
+  letter-spacing: var(--font-letter-spacing-pos-xsmall);
+}
+.figma-font-ui12 {
+  font-family: var(--font-stack);
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--font-lineHeight);
+  letter-spacing: var(--font-letter-spacing-pos-small);
+}
+.figma-font-ui13 {
+  font-family: var(--font-stack);
+  font-size: var(--font-size-large);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--font-lineHeight-large);
+  letter-spacing: var(--font-letter-spacing-pos-large);
+}
+.figma-font-ui14 {
+  font-family: var(--font-stack);
+  font-size: var(--font-size-xlarge);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--font-lineHeight-large);
+  letter-spacing: var(--font-letter-spacing-pos-xlarge);
+}
+
+.figma-font-ui11-medium {
+  font-family: var(--font-stack);
+  font-size: var(--font-size-xsmall);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--font-lineHeight);
+  letter-spacing: var(--font-letter-spacing-pos-xsmall);
+}
+.figma-font-ui12-medium {
+  font-family: var(--font-stack);
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--font-lineHeight);
+  letter-spacing: var(--font-letter-spacing-pos-small);
+}
+.figma-font-ui13-medium {
+  font-family: var(--font-stack);
+  font-size: var(--font-size-large);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--font-lineHeight-large);
+  letter-spacing: var(--font-letter-spacing-pos-large);
+}
+.figma-font-ui14-medium {
+  font-family: var(--font-stack);
+  font-size: var(--font-size-xlarge);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--font-lineHeight-large);
+  letter-spacing: var(--font-letter-spacing-pos-xlarge);
+}
+
+.figma-font-ui11-bold {
+  font-family: var(--font-stack);
+  font-size: var(--font-size-xsmall);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--font-lineHeight);
+  letter-spacing: var(--font-letter-spacing-pos-xsmall);
+}
+.figma-font-ui12-bold {
+  font-family: var(--font-stack);
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--font-lineHeight);
+  letter-spacing: var(--font-letter-spacing-pos-small);
+}
+.figma-font-ui13-bold {
+  font-family: var(--font-stack);
+  font-size: var(--font-size-large);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--font-lineHeight-large);
+  letter-spacing: var(--font-letter-spacing-pos-large);
+}
+.figma-font-ui14-bold {
+  font-family: var(--font-stack);
+  font-size: var(--font-size-xlarge);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--font-lineHeight-large);
+  letter-spacing: var(--font-letter-spacing-pos-xlarge);
+}
+
+/* Dark Mode Type */
+
+.figma-dark .figma-font-ui11,
+.figma-dark .figma-font-ui11-medium,
+.figma-dark .figma-font-ui11-bold {
+  letter-spacing: var(--font-letter-spacing-neg-xsmall);
+}
+.figma-dark .figma-font-ui12,
+.figma-dark .figma-font-ui12-medium,
+.figma-dark .figma-font-ui12-bold {
+  letter-spacing: var(--font-letter-spacing-neg-small);
+}
+.figma-dark .figma-font-ui13,
+.figma-dark .figma-font-ui13-medium,
+.figma-dark .figma-font-ui13-bold {
+  letter-spacing: var(--font-letter-spacing-neg-large);
+}
+.figma-dark .figma-font-ui14,
+.figma-dark .figma-font-ui14-medium,
+.figma-dark .figma-font-ui14-bold {
+  letter-spacing: var(--font-letter-spacing-neg-xlarge);
+}
+
+/* padding */
+.p-xxxsmall { padding: var(--figma-size-xxxsmall);}
+.p-xxsmall { padding: var(--figma-size-xxsmall);}
+.p-xsmall { padding: var(--figma-size-xsmall);}
+.p-small { padding: var(--figma-size-small);}
+.p-medium { padding: var(--figma-size-medium);}
+.p-large { padding: var(--figma-size-large);}
+.p-xlarge { padding: var(--figma-size-xlarge);}
+.p-xxlarge { padding: var(--figma-size-xxlarge);}
+.p-huge { padding: var(--figma-size-huge);}
+
+/* padding top */
+.pt-xxxsmall { padding-top: var(--figma-size-xxxsmall);}
+.pt-xxsmall { padding-top: var(--figma-size-xxsmall);}
+.pt-xsmall { padding-top: var(--figma-size-xsmall);}
+.pt-small { padding-top: var(--figma-size-small);}
+.pt-medium { padding-top: var(--figma-size-medium);}
+.pt-large { padding-top: var(--figma-size-large);}
+.pt-xlarge { padding-top: var(--figma-size-xlarge);}
+.pt-xxlarge { padding-top: var(--figma-size-xxlarge);}
+.pt-huge { padding-top: var(--figma-size-huge);}
+
+/* padding right */
+.pr-xxxsmall { padding-right: var(--figma-size-xxxsmall);}
+.pr-xxsmall { padding-right: var(--figma-size-xxsmall);}
+.pr-xsmall { padding-right: var(--figma-size-xsmall);}
+.pr-small { padding-right: var(--figma-size-small);}
+.pr-medium { padding-right: var(--figma-size-medium);}
+.pr-large { padding-right: var(--figma-size-large);}
+.pr-xlarge { padding-right: var(--figma-size-xlarge);}
+.pr-xxlarge { padding-right: var(--figma-size-xxlarge);}
+.pr-huge { padding-right: var(--figma-size-huge);}
+
+/* padding bottom */
+.pb-xxxsmall { padding-bottom: var(--figma-size-xxxsmall);}
+.pb-xxsmall { padding-bottom: var(--figma-size-xxsmall);}
+.pb-xsmall { padding-bottom: var(--figma-size-xsmall);}
+.pb-small { padding-bottom: var(--figma-size-small);}
+.pb-medium { padding-bottom: var(--figma-size-medium);}
+.pb-large { padding-bottom: var(--figma-size-large);}
+.pb-xlarge { padding-bottom: var(--figma-size-xlarge);}
+.pb-xxlarge { padding-bottom: var(--figma-size-xxlarge);}
+.pb-huge { padding-bottom: var(--figma-size-huge);}
+
+/* padding left */
+.pl-xxxsmall { padding-left: var(--figma-size-xxxsmall);}
+.pl-xxsmall { padding-left: var(--figma-size-xxsmall);}
+.pl-xsmall { padding-left: var(--figma-size-xsmall);}
+.pl-small { padding-left: var(--figma-size-small);}
+.pl-medium { padding-left: var(--figma-size-medium);}
+.pl-large { padding-left: var(--figma-size-large);}
+.pl-xlarge { padding-left: var(--figma-size-xlarge);}
+.pl-xxlarge { padding-left: var(--figma-size-xxlarge);}
+.pl-huge { padding-left: var(--figma-size-huge);}
+
+/* margin */
+.m-xxxsmall { margin: var(--figma-size-xxxsmall);}
+.m-xxsmall { margin: var(--figma-size-xxsmall);}
+.m-xsmall { margin: var(--figma-size-xsmall);}
+.m-small { margin: var(--figma-size-small);}
+.m-medium { margin: var(--figma-size-medium);}
+.m-large { margin: var(--figma-size-large);}
+.m-xlarge { margin: var(--figma-size-xlarge);}
+.m-xxlarge { margin: var(--figma-size-xxlarge);}
+.m-huge { margin: var(--figma-size-huge);}
+
+/* margin top */
+.mt-xxxsmall { margin-top: var(--figma-size-xxxsmall);}
+.mt-xxsmall { margin-top: var(--figma-size-xxsmall);}
+.mt-xsmall { margin-top: var(--figma-size-xsmall);}
+.mt-small { margin-top: var(--figma-size-small);}
+.mt-medium { margin-top: var(--figma-size-medium);}
+.mt-large { margin-top: var(--figma-size-large);}
+.mt-xlarge { margin-top: var(--figma-size-xlarge);}
+.mt-xxlarge { margin-top: var(--figma-size-xxlarge);}
+.mt-huge { margin-top: var(--figma-size-huge);}
+
+/* margin right */
+.mr-xxxsmall { margin-right: var(--figma-size-xxxsmall);}
+.mr-xxsmall { margin-right: var(--figma-size-xxsmall);}
+.mr-xsmall { margin-right: var(--figma-size-xsmall);}
+.mr-small { margin-right: var(--figma-size-small);}
+.mr-medium { margin-right: var(--figma-size-medium);}
+.mr-large { margin-right: var(--figma-size-large);}
+.mr-xlarge { margin-right: var(--figma-size-xlarge);}
+.mr-xxlarge { margin-right: var(--figma-size-xxlarge);}
+.mr-huge { margin-right: var(--figma-size-huge);}
+
+/* margin bottom */
+.mb-xxxsmall { margin-bottom: var(--figma-size-xxxsmall);}
+.mb-xxsmall { margin-bottom: var(--figma-size-xxsmall);}
+.mb-xsmall { margin-bottom: var(--figma-size-xsmall);}
+.mb-small { margin-bottom: var(--figma-size-small);}
+.mb-medium { margin-bottom: var(--figma-size-medium);}
+.mb-large { margin-bottom: var(--figma-size-large);}
+.mb-xlarge { margin-bottom: var(--figma-size-xlarge);}
+.mb-xxlarge { margin-bottom: var(--figma-size-xxlarge);}
+.mb-huge { margin-bottom: var(--figma-size-huge);}
+
+/* margin left */
+.ml-xxxsmall { margin-left: var(--figma-size-xxxsmall);}
+.ml-xxsmall { margin-left: var(--figma-size-xxsmall);}
+.ml-xsmall { margin-left: var(--figma-size-xsmall);}
+.ml-small { margin-left: var(--figma-size-small);}
+.ml-medium { margin-left: var(--figma-size-medium);}
+.ml-large { margin-left: var(--figma-size-large);}
+.ml-xlarge { margin-left: var(--figma-size-xlarge);}
+.ml-xxlarge { margin-left: var(--figma-size-xxlarge);}
+.ml-huge { margin-left: var(--figma-size-huge);}
+
+/* layout */
+.hidden { display: none;}
+.inline { display: inline;}
+.block { display: block;}
+.inline-block { display: inline-block;}
+.flex { display: flex;}
+.inline-flex { display: inline-flex;}
+
+.column { flex-direction: column;}
+.column-reverse { flex-direction: column-reverse;}
+.row { flex-direction: row;}
+.row-reverse { flex-direction: row-reverse;}
+
+.flex-wrap { flex-wrap: wrap;}
+.flex-wrap-reverse { flex-wrap: wrap-reverse;}
+.flex-no-wrap { flex-wrap: nowrap;}
+
+.flex-shrink { flex-shrink: 1;}
+.flex-no-shrink { flex-shrink: 0;}
+.flex-grow { flex-grow: 1;}
+.flex-no-grow { flex-grow: 0;}
+
+.justify-content-start { justify-content: flex-start;}
+.justify-content-end { justify-content: flex-end;}
+.justify-content-center { justify-content: center;}
+.justify-content-between { justify-content: space-between;}
+.justify-content-around { justify-content: space-around;}
+
+
+:root {
+    --figma-color-bg: rgba(255, 255, 255, 1);
+    --figma-color-bg-brand: #0d99ff;
+    --figma-color-bg-brand-hover: #007be5;
+    --figma-color-bg-brand-pressed: #007be5;
+    --figma-color-bg-brand-secondary: #0768cf;
+    --figma-color-bg-brand-tertiary: #e5f4ff;
+    --figma-color-bg-component: #9747ff;
+    --figma-color-bg-component-hover: #8638e5;
+    --figma-color-bg-component-pressed: #8638e5;
+    --figma-color-bg-component-secondary: #7c2bda;
+    --figma-color-bg-component-tertiary: #f1e5ff;
+    --figma-color-bg-danger: #f24822;
+    --figma-color-bg-danger-hover: #dc3412;
+    --figma-color-bg-danger-pressed: #dc3412;
+    --figma-color-bg-danger-secondary: #bd2915;
+    --figma-color-bg-danger-tertiary: #ffe2e0;
+    --figma-color-bg-disabled: #d9d9d9;
+    --figma-color-bg-disabled-secondary: #b3b3b3;
+    --figma-color-bg-hover: #f5f5f5;
+    --figma-color-bg-inverse: #2c2c2c;
+    --figma-color-bg-onselected: #bde3ff;
+    --figma-color-bg-onselected-hover: #bde3ff;
+    --figma-color-bg-onselected-pressed: #bde3ff;
+    --figma-color-bg-pressed: #f5f5f5;
+    --figma-color-bg-secondary: #f5f5f5;
+    --figma-color-bg-selected: #e5f4ff;
+    --figma-color-bg-selected-hover: #bde3ff;
+    --figma-color-bg-selected-pressed: #bde3ff;
+    --figma-color-bg-selected-secondary: #f2f9ff;
+    --figma-color-bg-selected-strong: #0d99ff;
+    --figma-color-bg-selected-tertiary: #f2f9ff;
+    --figma-color-bg-success: #14ae5c;
+    --figma-color-bg-success-hover: #009951;
+    --figma-color-bg-success-pressed: #009951;
+    --figma-color-bg-success-secondary: #008043;
+    --figma-color-bg-success-tertiary: #cff7d3;
+    --figma-color-bg-tertiary: #e6e6e6;
+    --figma-color-bg-warning: #ffcd29;
+    --figma-color-bg-warning-hover: #ffc21a;
+    --figma-color-bg-warning-pressed: #ffc21a;
+    --figma-color-bg-warning-secondary: #fab815;
+    --figma-color-bg-warning-tertiary: #fff1c2;
+    --figma-color-border: #e6e6e6;
+    --figma-color-border-brand: #bde3ff;
+    --figma-color-border-brand-strong: #007be5;
+    --figma-color-border-component: #e4ccff;
+    --figma-color-border-component-hover: #9747ff;
+    --figma-color-border-component-strong: #8638e5;
+    --figma-color-border-danger: #ffc7c2;
+    --figma-color-border-danger-strong: #dc3412;
+    --figma-color-border-disabled: #e6e6e6;
+    --figma-color-border-disabled-strong: rgba(0, 0, 0, 0.3);
+    --figma-color-border-onbrand: #007be5;
+    --figma-color-border-onbrand-strong: rgba(255, 255, 255, 1);
+    --figma-color-border-oncomponent: #8638e5;
+    --figma-color-border-oncomponent-strong: rgba(255, 255, 255, 1);
+    --figma-color-border-ondanger: #dc3412;
+    --figma-color-border-ondanger-strong: rgba(255, 255, 255, 1);
+    --figma-color-border-onselected: #bde3ff;
+    --figma-color-border-onselected-strong: rgba(0, 0, 0, 0.9);
+    --figma-color-border-onsuccess: #009951;
+    --figma-color-border-onsuccess-strong: rgba(255, 255, 255, 1);
+    --figma-color-border-onwarning: #fab815;
+    --figma-color-border-onwarning-strong: rgba(0, 0, 0, 0.9);
+    --figma-color-border-selected: #0d99ff;
+    --figma-color-border-selected-strong: #007be5;
+    --figma-color-border-strong: #2c2c2c;
+    --figma-color-border-success: #aff4c6;
+    --figma-color-border-success-strong: #009951;
+    --figma-color-border-warning: #ffe8a3;
+    --figma-color-border-warning-strong: #b86200;
+    --figma-color-icon: rgba(0, 0, 0, 0.9);
+    --figma-color-icon-brand: #007be5;
+    --figma-color-icon-brand-pressed: #0768cf;
+    --figma-color-icon-brand-secondary: #80caff;
+    --figma-color-icon-brand-tertiary: #bde3ff;
+    --figma-color-icon-component: #8638e5;
+    --figma-color-icon-component-pressed: #7c2bda;
+    --figma-color-icon-component-secondary: #c5b2dc;
+    --figma-color-icon-component-tertiary: #c5b2dc;
+    --figma-color-icon-danger: #f24822;
+    --figma-color-icon-danger-hover: #bd2915;
+    --figma-color-icon-danger-pressed: #bd2915;
+    --figma-color-icon-danger-secondary: #f24822;
+    --figma-color-icon-danger-secondary-hover: #f24822;
+    --figma-color-icon-danger-tertiary: #f24822;
+    --figma-color-icon-disabled: rgba(0, 0, 0, 0.3);
+    --figma-color-icon-hover: rgba(0, 0, 0, 0.9);
+    --figma-color-icon-onbrand: rgba(255, 255, 255, 1);
+    --figma-color-icon-onbrand-secondary: rgba(255, 255, 255, 0.8);
+    --figma-color-icon-onbrand-tertiary: rgba(255, 255, 255, 0.4);
+    --figma-color-icon-oncomponent: rgba(255, 255, 255, 1);
+    --figma-color-icon-oncomponent-secondary: rgba(255, 255, 255, 0.8);
+    --figma-color-icon-oncomponent-tertiary: rgba(255, 255, 255, 0.4);
+    --figma-color-icon-ondanger: rgba(255, 255, 255, 1);
+    --figma-color-icon-ondanger-secondary: rgba(255, 255, 255, 0.8);
+    --figma-color-icon-ondanger-tertiary: rgba(255, 255, 255, 0.4);
+    --figma-color-icon-ondisabled: rgba(255, 255, 255, 1);
+    --figma-color-icon-oninverse: rgba(255, 255, 255, 0.9);
+    --figma-color-icon-onselected: rgba(0, 0, 0, 0.9);
+    --figma-color-icon-onselected-secondary: rgba(0, 0, 0, 0.5);
+    --figma-color-icon-onselected-strong: rgba(255, 255, 255, 1);
+    --figma-color-icon-onselected-tertiary: rgba(0, 0, 0, 0.3);
+    --figma-color-icon-onsuccess: rgba(255, 255, 255, 1);
+    --figma-color-icon-onsuccess-secondary: rgba(255, 255, 255, 0.8);
+    --figma-color-icon-onsuccess-tertiary: rgba(255, 255, 255, 0.4);
+    --figma-color-icon-onwarning: rgba(0, 0, 0, 0.9);
+    --figma-color-icon-onwarning-secondary: rgba(0, 0, 0, 0.5);
+    --figma-color-icon-onwarning-tertiary: rgba(0, 0, 0, 0.3);
+    --figma-color-icon-pressed: #007be5;
+    --figma-color-icon-secondary: rgba(0, 0, 0, 0.5);
+    --figma-color-icon-secondary-hover: rgba(0, 0, 0, 0.9);
+    --figma-color-icon-selected: #007be5;
+    --figma-color-icon-selected-secondary: #007be5;
+    --figma-color-icon-selected-tertiary: #007be5;
+    --figma-color-icon-success: #14ae5c;
+    --figma-color-icon-success-pressed: #008043;
+    --figma-color-icon-success-secondary: #14ae5c;
+    --figma-color-icon-success-tertiary: #14ae5c;
+    --figma-color-icon-tertiary: rgba(0, 0, 0, 0.3);
+    --figma-color-icon-tertiary-hover: rgba(0, 0, 0, 0.9);
+    --figma-color-icon-warning: #ffcd29;
+    --figma-color-icon-warning-pressed: #b86200;
+    --figma-color-icon-warning-secondary: #ffcd29;
+    --figma-color-icon-warning-tertiary: #ffcd29;
+    --figma-color-text: rgba(0, 0, 0, 0.9);
+    --figma-color-text-brand: #007be5;
+    --figma-color-text-brand-secondary: #007be5;
+    --figma-color-text-brand-tertiary: #007be5;
+    --figma-color-text-component: #8638e5;
+    --figma-color-text-component-pressed: #7c2bda;
+    --figma-color-text-component-secondary: #c5b2dc;
+    --figma-color-text-component-tertiary: #c5b2dc;
+    --figma-color-text-danger: #dc3412;
+    --figma-color-text-danger-secondary: #dc3412;
+    --figma-color-text-danger-tertiary: #dc3412;
+    --figma-color-text-disabled: rgba(0, 0, 0, 0.3);
+    --figma-color-text-hover: rgba(0, 0, 0, 0.9);
+    --figma-color-text-onbrand: rgba(255, 255, 255, 1);
+    --figma-color-text-onbrand-secondary: rgba(255, 255, 255, 0.8);
+    --figma-color-text-onbrand-tertiary: rgba(255, 255, 255, 0.4);
+    --figma-color-text-oncomponent: rgba(255, 255, 255, 1);
+    --figma-color-text-oncomponent-secondary: rgba(255, 255, 255, 0.8);
+    --figma-color-text-oncomponent-tertiary: rgba(255, 255, 255, 0.4);
+    --figma-color-text-ondanger: rgba(255, 255, 255, 1);
+    --figma-color-text-ondanger-secondary: rgba(255, 255, 255, 0.8);
+    --figma-color-text-ondanger-tertiary: rgba(255, 255, 255, 0.4);
+    --figma-color-text-ondisabled: rgba(255, 255, 255, 1);
+    --figma-color-text-oninverse: rgba(255, 255, 255, 0.9);
+    --figma-color-text-onselected: rgba(0, 0, 0, 0.9);
+    --figma-color-text-onselected-secondary: rgba(0, 0, 0, 0.5);
+    --figma-color-text-onselected-strong: rgba(255, 255, 255, 1);
+    --figma-color-text-onselected-tertiary: rgba(0, 0, 0, 0.3);
+    --figma-color-text-onsuccess: rgba(255, 255, 255, 1);
+    --figma-color-text-onsuccess-secondary: rgba(255, 255, 255, 0.8);
+    --figma-color-text-onsuccess-tertiary: rgba(255, 255, 255, 0.4);
+    --figma-color-text-onwarning: rgba(0, 0, 0, 0.9);
+    --figma-color-text-onwarning-secondary: rgba(0, 0, 0, 0.5);
+    --figma-color-text-onwarning-tertiary: rgba(0, 0, 0, 0.3);
+    --figma-color-text-secondary: rgba(0, 0, 0, 0.5);
+    --figma-color-text-secondary-hover: rgba(0, 0, 0, 0.9);
+    --figma-color-text-selected: #007be5;
+    --figma-color-text-selected-secondary: #007be5;
+    --figma-color-text-selected-tertiary: #007be5;
+    --figma-color-text-success: #009951;
+    --figma-color-text-success-secondary: #009951;
+    --figma-color-text-success-tertiary: #009951;
+    --figma-color-text-tertiary: rgba(0, 0, 0, 0.3);
+    --figma-color-text-tertiary-hover: rgba(0, 0, 0, 0.9);
+    --figma-color-text-warning: #b86200;
+    --figma-color-text-warning-secondary: #b86200;
+    --figma-color-text-warning-tertiary: #b86200;
+}

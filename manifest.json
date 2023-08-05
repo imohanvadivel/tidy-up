@@ -1,0 +1,31 @@
+{
+  "name": "Tidy up",
+  "id": "1250126231463900099",
+  "api": "1.0.0",
+  "main": "dist/code.js",
+  "menu": [
+    {
+      "name": "Auto Tidy up",
+      "command": "auto"
+    },
+    {
+      "name": "Tidy up as single column",
+      "command": "column"
+    },
+    {
+      "name": "Tidy up as single row",
+      "command": "row"
+    },
+    {
+      "name": "Open Tidy up",
+      "command": "open"
+    }
+  ],
+  "capabilities": [],
+  "enableProposedApi": false,
+  "editorType": [
+    "figma",
+    "figjam"
+  ],
+  "ui": "dist/index.html"
+}

@@ -1,0 +1,28 @@
+{
+  "name": "tidy-up",
+  "type": "module",
+  "scripts": {
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "watch_ui": "export NODE_ENV=DEV && vite build",
+    "build_ui": "export NODE_ENV=PROD && vite build",
+    "watch_code": "esbuild src/code.ts --bundle --watch --outdir=dist",
+    "build_code": "esbuild src/code.ts --bundle --minify --outdir=dist",
+    "watch": "npm run watch_ui & npm run watch_code",
+    "build": "npm run build_ui & npm run build_code"
+  },
+  "devDependencies": {
+    "@figma/plugin-typings": "^1.65.0",
+    "@sveltejs/vite-plugin-svelte": "^2.0.4",
+    "@tsconfig/svelte": "^4.0.1",
+    "svelte": "^3.58.0",
+    "svelte-check": "^3.3.1",
+    "tslib": "^2.5.0",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.9",
+    "vite-plugin-singlefile": "^0.13.5",
+    "vite-svg-loader": "^4.0.0"
+  },
+  "dependencies": {
+    "figsvelte": "^0.0.4"
+  }
+}
