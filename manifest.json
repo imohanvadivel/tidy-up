@@ -27,5 +27,9 @@
     "figma",
     "figjam"
   ],
-  "ui": "dist/index.html"
+  "ui": "dist/index.html",
+  "documentAccess": "dynamic-page",
+  "networkAccess": {
+    "allowedDomains": ["none"]
+  }
 }

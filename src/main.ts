@@ -1,4 +1,4 @@
-import "figsvelte/globalCSS";
+import "figblocks/globalStyles";
 import App from "./App.svelte";
 
 const app = new App({

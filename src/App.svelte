@@ -1,6 +1,6 @@
 <script lang="ts">
     import { postFigma } from "$lib/util.ts";
-    import { Button, Checkbox, Divider, Input, Label, SectionTitle, Select } from "figsvelte";
+    import { Button, Checkbox, Divider, Input, Label, SectionTitle, Select } from "figblocks";
 
     let config = {
         columnCount: "Auto",
