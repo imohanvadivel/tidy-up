@@ -1,4 +1,4 @@
-type Sort = "position" | "random" | "width_asc" | "width_des" | "height_asc" | "height_des" | "area_asc" | "area_des";
+type Sort = "position" | "random" | "width_asc" | "width_des" | "height_asc" | "height_des" | "area_asc" | "area_des" | "alpha_asc" | "alpha_des";
 type Alignment = "TL" | "TC" | "TR" | "ML" | "MC" | "MR" | "BL" | "BC" | "BR";
 type figmaNode =
     | RectangleNode
@@ -126,6 +126,22 @@ function tidify(config: gridOption) {
                     let b_area = b.height * b.width;
                     if (a_area > b_area) return -1;
                     if (a_area < b_area) return +1;
+                    return 0;
+                });
+                break;
+
+            case "alpha_asc":
+                nodes.sort((a, b) => {
+                    if (a.name > b.name) return 1;
+                    if (a.name < b.name) return -1;
+                    return 0;
+                });
+                break;
+
+            case "alpha_des":
+                nodes.sort((a, b) => {
+                    if (a.name > b.name) return -1;
+                    if (a.name < b.name) return 1;
                     return 0;
                 });
                 break;

@@ -17,6 +17,8 @@
         { value: "height_des", label: "Height (descending)", selected: false },
         { value: "width_asc", label: "Width (ascending)", selected: false },
         { value: "width_des", label: "Width (descending)", selected: false },
+        { value: "alpha_asc", label: "Alphabetical (ascending)", selected: false },
+        { value: "alpha_des", label: "Alphabetical (descending)", selected: false },
         { value: "area_asc", label: "Area (ascending)", selected: false },
         { value: "area_des", label: "Area (descending)", selected: false },
         { value: "random", label: "Random", selected: false },
